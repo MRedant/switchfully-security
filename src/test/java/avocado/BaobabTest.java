@@ -24,7 +24,7 @@ public class BaobabTest extends RestAssuredTest {
                 .get(String.format("%s/%s", ArmyResource.ARMY_RESOURCE_PATH, "Belgium"))
                 .then()
                 .assertThat()
-                .statusCode(FORBIDDEN.value());
+                .statusCode(OK.value());
     }
 
     @Test
